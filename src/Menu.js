@@ -1,12 +1,13 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export function Menu() {
     return (
         <nav className="menu">
-            <a className="menu__item" href="/">Главная</a>
-            <a className="menu__item" href="/drift">Дрифт-такси</a>
-            <a className="menu__item" href="/timeattack">Time Attack</a>
-            <a className="menu__item" href="/forza">Forza Karting</a>
+            <NavLink className="menu__item" to="/">Главная</NavLink>
+            <NavLink className="menu__item" to="/drift">Дрифт-такси</NavLink>
+            <NavLink className="menu__item" to="/timeattack">Time Attack</NavLink>
+            <NavLink className="menu__item" to="/forza">Forza Karting</NavLink>
         </nav>
     )
 }
